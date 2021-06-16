@@ -1,11 +1,12 @@
 <template>
   <div
-    v-editable="blok">
-    <component
-      v-for="blok in blok.body"
-      :key="blok._uid"
-      :blok="blok"
-      :is="blok.component" />
+    v-editable="blok"
+  >
+    <h1>{{ blok.title }}</h1>
+    <p>{{ blok.intro}}</p>
+    <rich-text-renderer
+      :document="blok.body_text"
+    />
   </div>
 </template>
  

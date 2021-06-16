@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'hackslash-blog',
+    title: 'Hack Slash Media',
     htmlAttrs: {
       lang: 'en'
     },
@@ -20,11 +20,20 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/main.scss'
   ],
+
+  styleResources: {
+    scss: [
+      './assets/css/*.scss'
+  ]
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/components',
+    '~/plugins/composition-api.js',
+    '~/plugins/storyblok-rich-text-renderer.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -36,6 +45,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources',
     [
       'storyblok-nuxt',
       {

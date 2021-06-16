@@ -9,10 +9,17 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@marvr/storyblok-rich-text-vue-renderer": "^2.0.1",
+    "@vue/composition-api": "^1.0.0-rc.11",
     "axios": "^0.21.1",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
     "storyblok-nuxt": "^2.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.1.0",
+    "fibers": "^5.0.0",
+    "sass": "^1.34.1",
+    "sass-loader": "^10.2.0"
+  }
 }

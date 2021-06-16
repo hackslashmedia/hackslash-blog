@@ -1,0 +1,64 @@
+$font-display: 'IBM Plex Sans', sans-serif;
+$font-sans: 'Roboto', sans-serif;
+
+$body-font: $font-sans;
+
+// Font weights
+$font-weight-bold: 700 !default;
+$font-weight-normal: 500 !default;
+
+// Text Sizes
+$text-size-14: 0.875rem;
+$text-size-16: 1rem;
+$text-size-18: 1.125rem;
+$text-size-20: 1.25rem;
+$text-size-22: 1.375rem;
+$text-size-24: 1.5rem;
+$text-size-28: 1.75rem;
+$text-size-32: 2rem;
+$text-size-36: 2.25rem;
+$text-size-38: 2.375rem;
+$text-size-40: 2.5rem;
+$text-size-42: 2.625rem;
+$text-size-44: 2.75rem;
+$text-size-48: 3rem;
+$text-size-56: 3.5rem;
+$text-size-62: 3.875rem;
+
+// Heading Sizes - Desktop
+$h1-size: $text-size-48;
+$h2-size: $text-size-40;
+$h3-size: $text-size-28;
+$h4-size: $text-size-22;
+$h5-size: $text-size-20;
+$h6-size: $text-size-20;
+
+// Heading Sizes - Mobile
+// h4-h6 remain the same size on both mobile & desktop
+$h1-size-mobile: $text-size-40;
+$h2-size-mobile: $text-size-32;
+$h3-size-mobile: $text-size-24;
+
+$body-font-size: $text-size-16;
+$body-font-size-desktop: $text-size-18;
+
+// Line heights
+$h1-line-height-desktop: 4rem;
+$h1-line-height-mobile: 3rem;
+
+$h2-line-height-desktop: 3.25rem;
+$h2-line-height-mobile: 2.75rem;
+
+$h3-line-height-desktop: 2.75rem;
+$h3-line-height-mobile: 2.25rem;
+
+$h4-line-height: 2rem;
+$h5-line-height: 1.75rem;
+$h6-line-height: 1.5rem;
+
+$lh-condensed-ultra: 1 !default;
+$lh-condensed: 1.25 !default;
+$lh-default: 1.5 !default;
+
+$body-line-height: $text-size-22;
+
