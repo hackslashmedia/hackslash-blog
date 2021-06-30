@@ -1,8 +1,17 @@
 <template>
+<div>
+<div style="display: flex; justify-content: flex-end">
+  <nuxt-link
+            class="text-teal-600 hover:underline"
+            to="/articles">
+            Blog
+          </nuxt-link>
+</div>
   <page
     v-if="story.content.component"
     :key="story.content._uid"
     :blok="story.content" />
+</div>
 </template>
  
 <script>
