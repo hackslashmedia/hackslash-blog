@@ -2,6 +2,7 @@
   <nuxt-link
     :to="articleLink"
     class="article-teaser block py-4 px-6 border rounded border-gray-500">
+    <img :src="articleImage.feature_image.filename" />
     <h2 class="pt-2 pb-4 text-2xl font-bold">
       {{ articleContent.name }}
     </h2>
@@ -21,6 +22,10 @@ export default {
     articleLink: {
       type: String,
       required: true
+    },
+    articleImage: {
+      type: String,
+      required: true,
     }
   }
 }
