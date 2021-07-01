@@ -1,21 +1,24 @@
 <template>
-<div>
-<div style="display: flex; justify-content: flex-end">
-  <nuxt-link
-            class="text-teal-600 hover:underline"
-            to="/articles">
-            Blog
-          </nuxt-link>
-</div>
-  <page
+  <div class="home-page">
+    <Hero />
+    <HomeNav />
+    <page
     v-if="story.content.component"
     :key="story.content._uid"
-    :blok="story.content" />
-</div>
+    :blok="story.content"
+    class="home-page__content" />
+  </div>
 </template>
  
 <script>
+import Hero from '../components/layout/Hero.vue';
+import HomeNav from '../components/layout/HomeNav.vue';
+
 export default {
+  components: {
+    Hero,
+    HomeNav,
+  },
   data () {
     return {
       story: { content: {} }
@@ -76,3 +79,14 @@ export default {
   }
 }
 </script>
+
+ <style lang="scss" scoped>
+  .home-page {
+    position: absolute;
+    width: 100%;
+    &__content {
+      position: relative;
+      padding: 2rem;
+    }
+  }
+ </style>

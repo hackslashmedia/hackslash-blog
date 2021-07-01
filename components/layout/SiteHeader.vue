@@ -28,6 +28,10 @@ export default {
 <style lang="scss" scoped>
 
 .site-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
     background-color: $white;
     padding: $spacer-3 $spacer-5;
     height: 80px;
@@ -35,7 +39,7 @@ export default {
     align-items: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
     @include breakpoint(md) {
-        height: 100px;
+        height: 80px;
     }
     &__brand {
         position: relative;
@@ -44,9 +48,10 @@ export default {
     }
     &__logo {
         &-block {
-            height: 122px;
-            margin-top: 90px;
+            height: 100px;
+            margin-top: 80px;
             margin-right: $spacer-4;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .5);
         }
         &-one-line {
             height: 40px;

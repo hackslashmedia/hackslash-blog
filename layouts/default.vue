@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="site-container">
     <SiteHeader />
     <Nuxt />
     <SiteFooter />
@@ -19,4 +19,9 @@ export default {
 </script>
 
 <style>
+.site-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 </style>
