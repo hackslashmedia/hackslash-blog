@@ -1,14 +1,14 @@
 <template>
-  <ul
+  <div
     v-editable="blok"
-    class="flex py-8 mb-6">
-    <li
+    class="home-grid">
+    <div
       :key="blok._uid"
       v-for="blok in blok.columns"
-      class="flex-auto px-6">
+      class="">
       <component :blok="blok" :is="blok.component" />
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
  
 <script>

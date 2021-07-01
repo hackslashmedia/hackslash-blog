@@ -1,16 +1,16 @@
 <template>
-  <div v-editable="blok">
+  <div v-editable="blok" class="featured-article">
     <h2>{{ blok.title }}</h2>
-    <ul>
-      <li v-for="article in sortedArticles" :key="article._uid">
+    <div>
+      <div v-for="article in sortedArticles" :key="article._uid">
         <article-teaser
           v-if="article.content"
           :article-link="article.full_slug"
           :article-image="article.content"
           :article-content="article.content"/>
         <p v-else>This content loads on save. <strong>Save the entry & reload.</strong></p>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </template>
  

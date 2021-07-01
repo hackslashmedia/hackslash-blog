@@ -1,12 +1,12 @@
 <template>
   <nuxt-link
     :to="articleLink"
-    class="article-teaser block py-4 px-6 border rounded border-gray-500">
+    class="">
     <img :src="articleImage.feature_image.filename" />
-    <h2 class="pt-2 pb-4 text-2xl font-bold">
+    <h2 class="">
       {{ articleContent.name }}
     </h2>
-    <p class="pb-6 leading-relaxed">
+    <p class="">
       {{ articleContent.intro }}
     </p>
   </nuxt-link>
