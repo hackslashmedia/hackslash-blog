@@ -1,15 +1,13 @@
 <template>
   <div v-editable="blok" class="featured-article">
     <h2>{{ blok.title }}</h2>
-    <div>
-      <div v-for="article in sortedArticles" :key="article._uid">
-        <article-teaser
-          v-if="article.content"
-          :article-link="article.full_slug"
-          :article-image="article.content"
-          :article-content="article.content"/>
-        <p v-else>This content loads on save. <strong>Save the entry & reload.</strong></p>
-      </div>
+    <div v-for="article in sortedArticles" :key="article._uid" class="featured-article__article">
+      <article-teaser
+        v-if="article.content"
+        :article-link="article.full_slug"
+        :article-image="article.content"
+        :article-content="article.content"/>
+      <p v-else>This content loads on save. <strong>Save the entry & reload.</strong></p>
     </div>
   </div>
 </template>

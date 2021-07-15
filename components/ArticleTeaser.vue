@@ -1,14 +1,18 @@
 <template>
-  <nuxt-link
-    :to="articleLink"
-    class="">
-    <img :src="articleImage.feature_image.filename" />
-    <h2 class="">
-      {{ articleContent.name }}
-    </h2>
-    <p class="">
-      {{ articleContent.intro }}
-    </p>
+  <nuxt-link :to="articleLink" class="">
+    <div class="article-teaser">
+      <div class="article-teaser__image">
+        <img :src="articleImage.feature_image.filename" />
+      </div>
+      <div class="article-teaser__body">
+        <h2 class="article-teaser__headline">
+          {{ articleContent.name }}
+        </h2>
+        <p class="">
+          {{ articleContent.intro }}
+        </p>
+      </div>
+    </div>
   </nuxt-link>
 </template>
  
@@ -31,8 +35,11 @@ export default {
 }
 </script>
  
-<style>
-.article-teaser:hover {
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-}
+<style lang="scss">
+  .article-teaser {
+    background: $white;
+    &__body {
+      padding: $spacer-3;
+    }
+  }
 </style>
